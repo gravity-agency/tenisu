@@ -6,7 +6,6 @@
   },
   "include": [
     "src/**/*.ts",
-    "bin/www.ts"
+    "bin/www.ts",
   ],
-  "exclude": []
 }

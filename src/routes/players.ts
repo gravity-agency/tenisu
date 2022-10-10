@@ -29,6 +29,9 @@ router.get('/:id', (_req, res) => {
     // Declare a player id which is parameter
     const playerId = parseInt(_req.params.id, 10);
 
+    // Declare the player to return
+    let player;
+
     // Check if the parameter exists
     if (!playerId) {
       return ErrorException.getErrorResponse(500, res, 'Bad player id...');
@@ -38,14 +41,19 @@ router.get('/:id', (_req, res) => {
     const players = getPlayersFromFile();
 
     // check if the given id matches with one of the players
-    players.forEach((player) => {
-      if (player.id === playerId) {
-        return res.status(200).json({
-          player,
-        });
+    players.forEach((pl) => {
+      if (pl.id === playerId) {
+        player = pl;
       }
       return null;
     });
+
+    // Return the player if id matches
+    if (player) {
+      return res.status(200).json({
+        player,
+      });
+    }
 
     // If no player was found with this id an error is returned
     return ErrorException.getErrorResponse(404, res, 'No player found with this id ...');

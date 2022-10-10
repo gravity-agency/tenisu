@@ -17,6 +17,10 @@
   "include": [
     "./src/**/*.ts",
     "./bin/www.ts",
-    "./test/**/*.ts"
+    "./test/**/*.ts",
   ],
+  "exclude": [
+    "node_modules",
+    "./dist/**/*.js"
+  ]
 }

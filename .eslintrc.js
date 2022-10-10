@@ -32,4 +32,7 @@ module.exports = {
         ],
         "react/jsx-filename-extension": [0]
     },
+    ignorePatterns: [
+        'dist/**/*'
+    ],
 };
