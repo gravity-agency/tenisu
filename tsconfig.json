@@ -3,8 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
+      "./*": [
+        "src/*",
       ]
     },
     "resolveJsonModule": true,
@@ -13,5 +13,10 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true
-  }
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./bin/www.ts",
+    "./test/**/*.ts"
+  ],
 }

@@ -2,14 +2,13 @@
  * Module dependencies.
  */
 
-import 'module-alias/register';
 import { config } from 'dotenv';
 
 import Debug from 'debug';
 import http from 'http';
 import Console from 'console';
-import app from '@/app';
-import {ENV_VARS} from "../env";
+import app from '../src/app';
+import { ENV_VARS } from '../env';
 
 config();
 

@@ -1,5 +1,5 @@
-import Country from '@/models/country';
-import Data from '@/models/data';
+import Country from './country';
+import Data from './data';
 
 export default class Player {
   /**

@@ -3,6 +3,7 @@ import path from 'path';
 import logger from 'morgan';
 
 import playersRouter from './routes/players';
+import statsRouter from './routes/stats';
 
 class App {
   public app: express.Application;
@@ -22,6 +23,7 @@ class App {
 
   private routerSetup() {
     this.app.use('/players', playersRouter);
+    this.app.use('/stats', statsRouter);
   }
 }
 
