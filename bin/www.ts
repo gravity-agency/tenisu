@@ -9,6 +9,7 @@ import Debug from 'debug';
 import http from 'http';
 import Console from 'console';
 import app from '@/app';
+import {ENV_VARS} from "../env";
 
 config();
 
@@ -38,7 +39,7 @@ function normalizePort(val: string) {
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(ENV_VARS.PORT || '3000');
 app.set('port', port);
 
 /**
