@@ -1,6 +1,6 @@
-# Express Typescript skeleton
+# Tenisu
 
-This is the express typescript example repo to use for new nodejs project with express
+This is the code for the tenisu exercice (https://tenisu.latelier.co/backend)
 
 # Getting started
 
