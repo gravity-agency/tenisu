@@ -1,6 +1,6 @@
 export default class Data {
   /**
-   * A model for data
+   * A model for player data
    * @param rank - current ATP rank of the player
    * @param points - number of points of the player
    * @param weight - weight of the player

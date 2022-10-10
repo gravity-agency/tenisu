@@ -1,6 +1,6 @@
 export default class CountryWins {
   /**
-   * A model for data
+   * A model for CountryWins to make stats easier
    * @param countryShortName - name of the country (3 letters)
    * @param wins - number of wins
    * @param games - number of games
